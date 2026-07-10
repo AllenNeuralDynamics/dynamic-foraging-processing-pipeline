@@ -20,6 +20,7 @@
 					"type": "capsule",
 					"name": "dynamic-foraging-behavior-only-nwb-packaging",
 					"source_path": "*.nwb.zarr",
+					"target_path": "dynamic_foraging_nwb_base",
 					"collect": true
 				},
 				{

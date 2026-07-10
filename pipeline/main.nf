@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:6d14fe1bcbe045c3396c37689888df18be7d8a98b9bfa13897df9438d876868b
+// hash:sha256:8dbd0de9e9a20dbdd5d309d35c9a8c341dddd3075d4c5178ec10b4fe032b6b57
 
 // capsule - dynamic-foraging-behavior-only-nwb-packaging
 process capsule_dynamic_foraging_behavior_only_nwb_packaging_2 {
@@ -111,7 +111,7 @@ process capsule_dynamic_foraging_behavior_only_qc_1 {
 	publishDir "$RESULTS_PATH", mode: 'copy', saveAs: { filename -> new File(filename).getName() }
 
 	input:
-	path 'capsule/data/'
+	path 'capsule/data/dynamic_foraging_nwb_base/'
 	path 'capsule/data/dynamic_foraging_raw_data'
 
 	output:
