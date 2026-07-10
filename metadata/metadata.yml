@@ -1,2 +1,9 @@
 metadata_version: 1
 name: dynamic-foraging-behavior-processing-pipeline
+description: Processing pipeline to process dynamic foraging behavior only data on
+  new acquisition standard
+authors:
+- name: Alex Piet
+- name: Micah Woodard
+- name: Bruno Cruz
+- name: Arjun Sridhar
