@@ -61,7 +61,8 @@
 				}
 			],
 			"results": {
-				"id": "bfb42bd0-eb90-4a34-b014-e29826262129"
+				"id": "0f46e0d0-ad1d-4f0b-b97f-18d56327b18e",
+				"source_path": "*.nwb.zarr"
 			}
 		},
 		{
