@@ -25,7 +25,7 @@ A raw acquisition directory in the
 data contract format (Harp registers, software events, task-logic / rig / session
 schemas). The data will be stored under the **behavior** folder. In addition, at the top level, there will be the `aind-data-schema` metadata files. 
 
-> **Note:** Data must be acquired in the data-contract format to be compatible.
+> **Note:** Data must be acquired in the data-contract and aind format to be compatible. See [here](https://docs.allenneuraldynamics.org/en/latest/policies_practices/data_organization.html) for more details on data organization.
 
 ## Outputs
 - **NWB** (`behavior.nwb.zarr`) — acquisition container (4 derived event series + all
@@ -37,6 +37,7 @@ schemas). The data will be stored under the **behavior** folder. In addition, at
 - **`quality_control.json`** (+ `qc/` figures) — combined raw (contract QC) +
   processed (behavior) metrics.
 - **`aind-data-schema`** files: `acquisition.json`, `instrument.json`, `data_description.json`, `procedures.json`, `processing.json`, `quality_control.json`
+- The asset currently will have the <process_label> as `processed-behavior` as part of the output asset name. See [here](https://docs.allenneuraldynamics.org/en/latest/policies_practices/data_organization.html#derived-data-conventions) for more details on derived data.
 
 ## Usage
 ```python
