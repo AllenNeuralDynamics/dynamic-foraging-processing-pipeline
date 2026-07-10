@@ -1,0 +1,110 @@
+{
+	"edges": [
+		{
+			"id": "xy-edge__88500e4b-eb56-4211-b0c5-0c176cb3e8b8-capsule_dynamic_foraging_behavior_only_nwb_packaging_2",
+			"selected": false,
+			"source": "88500e4b-eb56-4211-b0c5-0c176cb3e8b8",
+			"target": "capsule_dynamic_foraging_behavior_only_nwb_packaging_2"
+		},
+		{
+			"id": "xy-edge__capsule_dynamic_foraging_behavior_only_nwb_packaging_2-capsule_dynamic_foraging_behavior_only_qc_1",
+			"selected": false,
+			"source": "capsule_dynamic_foraging_behavior_only_nwb_packaging_2",
+			"target": "capsule_dynamic_foraging_behavior_only_qc_1"
+		},
+		{
+			"id": "xy-edge__88500e4b-eb56-4211-b0c5-0c176cb3e8b8-capsule_dynamic_foraging_behavior_only_qc_1",
+			"selected": false,
+			"source": "88500e4b-eb56-4211-b0c5-0c176cb3e8b8",
+			"target": "capsule_dynamic_foraging_behavior_only_qc_1"
+		},
+		{
+			"id": "xy-edge__capsule_dynamic_foraging_behavior_only_nwb_packaging_2-results",
+			"selected": false,
+			"source": "capsule_dynamic_foraging_behavior_only_nwb_packaging_2",
+			"target": "results"
+		},
+		{
+			"id": "xy-edge__88500e4b-eb56-4211-b0c5-0c176cb3e8b8-capsule_aind_metadata_manager_capsule_3",
+			"selected": false,
+			"source": "88500e4b-eb56-4211-b0c5-0c176cb3e8b8",
+			"target": "capsule_aind_metadata_manager_capsule_3"
+		},
+		{
+			"id": "xy-edge__capsule_dynamic_foraging_behavior_only_qc_1-results",
+			"source": "capsule_dynamic_foraging_behavior_only_qc_1",
+			"target": "results"
+		},
+		{
+			"id": "xy-edge__capsule_aind_metadata_manager_capsule_3-results",
+			"source": "capsule_aind_metadata_manager_capsule_3",
+			"target": "results"
+		},
+		{
+			"id": "xy-edge__capsule_dynamic_foraging_behavior_only_nwb_packaging_2-capsule_aind_metadata_manager_capsule_3",
+			"source": "capsule_dynamic_foraging_behavior_only_nwb_packaging_2",
+			"target": "capsule_aind_metadata_manager_capsule_3"
+		}
+	],
+	"nodes": [
+		{
+			"id": "88500e4b-eb56-4211-b0c5-0c176cb3e8b8",
+			"position": {
+				"x": 1160.4444173177083,
+				"y": 243.1111043294271
+			},
+			"type": "dataset"
+		},
+		{
+			"data": {
+				"capsule_id": "6b0ab8c8-fefc-4009-8240-39bdedeabf15"
+			},
+			"id": "capsule_dynamic_foraging_behavior_only_qc_1",
+			"position": {
+				"x": 1087.1110839843752,
+				"y": 812.4444376627604
+			},
+			"selected": true,
+			"type": "capsule"
+		},
+		{
+			"id": "results",
+			"position": {
+				"x": 1007.1110839843748,
+				"y": 1181.7777709960938
+			},
+			"selected": false,
+			"type": "results"
+		},
+		{
+			"data": {
+				"capsule_id": "0f46e0d0-ad1d-4f0b-b97f-18d56327b18e"
+			},
+			"id": "capsule_dynamic_foraging_behavior_only_nwb_packaging_2",
+			"position": {
+				"x": 720.4444173177084,
+				"y": 461.77777099609375
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "22261566-0b4f-42aa-bcaa-58efa55bf653"
+			},
+			"id": "capsule_aind_metadata_manager_capsule_3",
+			"position": {
+				"x": 1487.111083984375,
+				"y": 833.7777709960939
+			},
+			"selected": false,
+			"type": "capsule"
+		}
+	],
+	"timestamp": 1783646803686,
+	"viewport": {
+		"x": 0,
+		"y": 0,
+		"zoom": 0.75
+	}
+}
