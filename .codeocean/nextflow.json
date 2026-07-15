@@ -64,41 +64,6 @@
 				"id": "0f46e0d0-ad1d-4f0b-b97f-18d56327b18e",
 				"source_path": "*.nwb.zarr"
 			}
-		},
-		{
-			"name": "capsule_aind_metadata_manager_capsule_3",
-			"capsule": {
-				"id": "22261566-0b4f-42aa-bcaa-58efa55bf653",
-				"name": "aind-metadata-manager-capsule",
-				"slug": "8324994",
-				"version": 4,
-				"app_panel": true
-			},
-			"resources": {
-				"cpus": 1,
-				"memory": 8
-			},
-			"inputs": [
-				{
-					"id": "bH8Ol67YSbDoaJnv",
-					"source_id": "capsule_dynamic_foraging_behavior_only_nwb_packaging_2",
-					"type": "capsule",
-					"name": "dynamic-foraging-behavior-only-nwb-packaging",
-					"source_path": "*.json",
-					"collect": true
-				},
-				{
-					"id": "mhYA4imS4y5FVfc5",
-					"source_id": "88500e4b-eb56-4211-b0c5-0c176cb3e8b8",
-					"type": "dataset",
-					"name": "dynamic_foraging_raw_data",
-					"source_path": "dynamic_foraging_raw_data/",
-					"collect": true
-				}
-			],
-			"results": {
-				"id": "24091c9b-d9a0-427b-90fb-52c90d29304a"
-			}
 		}
 	]
 }

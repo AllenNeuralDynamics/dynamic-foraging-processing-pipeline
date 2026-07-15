@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:f4cf5ca2b94b42c4746c738fbc029d3a95c1556f24e61421e98768270264e314
+// hash:sha256:b6e9ceff9935e9d5b37fd0346a54ea944d00e11805186341f148c5891bf4d615
 
 // capsule - dynamic-foraging-behavior-only-nwb-packaging
 process capsule_dynamic_foraging_behavior_only_nwb_packaging_2 {
@@ -17,7 +17,6 @@ process capsule_dynamic_foraging_behavior_only_nwb_packaging_2 {
 	output:
 	path 'capsule/results/*.nwb.zarr', emit: to_capsule_dynamic_foraging_behavior_only_qc_1_1
 	path 'capsule/results/*.nwb.zarr'
-	path 'capsule/results/*.json', emit: to_capsule_aind_metadata_manager_capsule_3_4
 
 	script:
 	"""
@@ -46,55 +45,6 @@ process capsule_dynamic_foraging_behavior_only_nwb_packaging_2 {
 	cd capsule/code
 	chmod +x run
 	./run
-
-	echo "[${task.tag}] completed!"
-	"""
-}
-
-// capsule - aind-metadata-manager-capsule
-process capsule_aind_metadata_manager_capsule_3 {
-	tag 'capsule-8324994'
-	container "$REGISTRY_HOST/published/22261566-0b4f-42aa-bcaa-58efa55bf653:v4"
-
-	cpus 1
-	memory '7.5 GB'
-
-	publishDir "$RESULTS_PATH", mode: 'copy', saveAs: { filename -> new File(filename).getName() }
-
-	input:
-	path 'capsule/data/'
-	path 'capsule/data'
-
-	output:
-	path 'capsule/results/*'
-
-	script:
-	"""
-	#!/usr/bin/env bash
-	set -e
-
-	export CO_CAPSULE_ID=22261566-0b4f-42aa-bcaa-58efa55bf653
-	export CO_CPUS=1
-	export CO_MEMORY=8053063680
-
-	mkdir -p capsule
-	mkdir -p capsule/data && ln -s \$PWD/capsule/data /data
-	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
-	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
-
-	echo "[${task.tag}] cloning git repo..."
-	if [[ "\$(printf '%s\n' "2.20.0" "\$(git version | awk '{print \$3}')" | sort -V | head -n1)" = "2.20.0" ]]; then
-		git -c credential.helper= clone --filter=tree:0 --branch v4.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-8324994.git" capsule-repo
-	else
-		git -c credential.helper= clone --branch v4.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-8324994.git" capsule-repo
-	fi
-	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
-	rm -rf capsule-repo
-
-	echo "[${task.tag}] running capsule..."
-	cd capsule/code
-	chmod +x run
-	./run ${params.capsule_aind_metadata_manager_capsule_3_args}
 
 	echo "[${task.tag}] completed!"
 	"""
@@ -155,10 +105,8 @@ workflow {
 	// input data
 	dynamic_foraging_raw_data_to_dynamic_foraging_behavior_only_qc_2 = Channel.fromPath(params.dynamic_foraging_raw_data_url + "/", type: 'any')
 	dynamic_foraging_raw_data_to_dynamic_foraging_behavior_only_nwb_packaging_3 = Channel.fromPath(params.dynamic_foraging_raw_data_url + "/", type: 'any')
-	dynamic_foraging_raw_data_to_aind_metadata_manager_capsule_5 = Channel.fromPath(params.dynamic_foraging_raw_data_url + "/", type: 'any')
 
 	// run processes
 	capsule_dynamic_foraging_behavior_only_nwb_packaging_2(dynamic_foraging_raw_data_to_dynamic_foraging_behavior_only_nwb_packaging_3.collect())
-	capsule_aind_metadata_manager_capsule_3(capsule_dynamic_foraging_behavior_only_nwb_packaging_2.out.to_capsule_aind_metadata_manager_capsule_3_4.collect(), dynamic_foraging_raw_data_to_aind_metadata_manager_capsule_5.collect())
 	capsule_dynamic_foraging_behavior_only_qc_1(capsule_dynamic_foraging_behavior_only_nwb_packaging_2.out.to_capsule_dynamic_foraging_behavior_only_qc_1_1.collect(), dynamic_foraging_raw_data_to_dynamic_foraging_behavior_only_qc_2.collect())
 }

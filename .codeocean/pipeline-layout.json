@@ -25,25 +25,9 @@
 			"target": "results"
 		},
 		{
-			"id": "xy-edge__88500e4b-eb56-4211-b0c5-0c176cb3e8b8-capsule_aind_metadata_manager_capsule_3",
-			"selected": false,
-			"source": "88500e4b-eb56-4211-b0c5-0c176cb3e8b8",
-			"target": "capsule_aind_metadata_manager_capsule_3"
-		},
-		{
 			"id": "xy-edge__capsule_dynamic_foraging_behavior_only_qc_1-results",
 			"source": "capsule_dynamic_foraging_behavior_only_qc_1",
 			"target": "results"
-		},
-		{
-			"id": "xy-edge__capsule_aind_metadata_manager_capsule_3-results",
-			"source": "capsule_aind_metadata_manager_capsule_3",
-			"target": "results"
-		},
-		{
-			"id": "xy-edge__capsule_dynamic_foraging_behavior_only_nwb_packaging_2-capsule_aind_metadata_manager_capsule_3",
-			"source": "capsule_dynamic_foraging_behavior_only_nwb_packaging_2",
-			"target": "capsule_aind_metadata_manager_capsule_3"
 		}
 	],
 	"nodes": [
@@ -87,24 +71,12 @@
 			},
 			"selected": false,
 			"type": "capsule"
-		},
-		{
-			"data": {
-				"capsule_id": "22261566-0b4f-42aa-bcaa-58efa55bf653"
-			},
-			"id": "capsule_aind_metadata_manager_capsule_3",
-			"position": {
-				"x": 1487.111083984375,
-				"y": 833.7777709960939
-			},
-			"selected": false,
-			"type": "capsule"
 		}
 	],
-	"timestamp": 1783646803686,
+	"timestamp": 1784139500520,
 	"viewport": {
-		"x": 0,
-		"y": 0,
-		"zoom": 0.75
+		"x": -283.40989968874055,
+		"y": -82.92870628965113,
+		"zoom": 0.5920285158781594
 	}
 }
