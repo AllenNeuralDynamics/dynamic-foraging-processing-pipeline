@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:b6e9ceff9935e9d5b37fd0346a54ea944d00e11805186341f148c5891bf4d615
+// hash:sha256:5de5d671009e4cfeb6d7dc62e1cf8e5c1866a96bfbcd74f3560fc36ebc6eee5e
 
 // capsule - dynamic-foraging-behavior-only-nwb-packaging
 process capsule_dynamic_foraging_behavior_only_nwb_packaging_2 {
@@ -9,14 +9,14 @@ process capsule_dynamic_foraging_behavior_only_nwb_packaging_2 {
 	cpus 1
 	memory '7.5 GB'
 
-	publishDir "$RESULTS_PATH", mode: 'copy', saveAs: { filename -> filename.matches("capsule/results/.*\\.nwb\\.zarr") ? new File(filename).getName() : null }
+	publishDir "$RESULTS_PATH", mode: 'copy', saveAs: { filename -> new File(filename).getName() }
 
 	input:
 	path 'capsule/data/dynamic_foraging_raw_data'
 
 	output:
 	path 'capsule/results/*.nwb.zarr', emit: to_capsule_dynamic_foraging_behavior_only_qc_1_1
-	path 'capsule/results/*.nwb.zarr'
+	path 'capsule/results/*'
 
 	script:
 	"""
