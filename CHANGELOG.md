@@ -1,3 +1,12 @@
+## [0.2.1](https://github.com/AllenNeuralDynamics/dynamic-foraging-processing-pipeline/compare/v0.2.0...v0.2.1) (2026-07-28)
+
+
+### Bug Fixes
+
+* connection when passing in processing json to merge ([#13](https://github.com/AllenNeuralDynamics/dynamic-foraging-processing-pipeline/issues/13)) ([4666a74](https://github.com/AllenNeuralDynamics/dynamic-foraging-processing-pipeline/commit/4666a746d81f59b96a20dd625e6cb5d9483ab359))
+
+
+
 # [0.2.0](https://github.com/AllenNeuralDynamics/dynamic-foraging-processing-pipeline/compare/v0.1.0...v0.2.0) (2026-07-28)
 
 
