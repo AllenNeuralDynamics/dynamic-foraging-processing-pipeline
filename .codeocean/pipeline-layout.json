@@ -1,9 +1,8 @@
 {
 	"edges": [
 		{
-			"id": "xy-edge__88500e4b-eb56-4211-b0c5-0c176cb3e8b8-capsule_dynamic_foraging_behavior_only_nwb_packaging_2",
-			"selected": false,
-			"source": "88500e4b-eb56-4211-b0c5-0c176cb3e8b8",
+			"id": "xy-edge__d9e5e37d-6ae7-4260-a0f6-3b22b8615a0c-capsule_dynamic_foraging_behavior_only_nwb_packaging_2",
+			"source": "d9e5e37d-6ae7-4260-a0f6-3b22b8615a0c",
 			"target": "capsule_dynamic_foraging_behavior_only_nwb_packaging_2"
 		},
 		{
@@ -13,9 +12,8 @@
 			"target": "capsule_dynamic_foraging_behavior_only_qc_1"
 		},
 		{
-			"id": "xy-edge__88500e4b-eb56-4211-b0c5-0c176cb3e8b8-capsule_dynamic_foraging_behavior_only_qc_1",
-			"selected": false,
-			"source": "88500e4b-eb56-4211-b0c5-0c176cb3e8b8",
+			"id": "xy-edge__d9e5e37d-6ae7-4260-a0f6-3b22b8615a0c-capsule_dynamic_foraging_behavior_only_qc_1",
+			"source": "d9e5e37d-6ae7-4260-a0f6-3b22b8615a0c",
 			"target": "capsule_dynamic_foraging_behavior_only_qc_1"
 		},
 		{
@@ -25,9 +23,8 @@
 			"target": "results"
 		},
 		{
-			"id": "xy-edge__88500e4b-eb56-4211-b0c5-0c176cb3e8b8-capsule_aind_metadata_manager_capsule_3",
-			"selected": false,
-			"source": "88500e4b-eb56-4211-b0c5-0c176cb3e8b8",
+			"id": "xy-edge__d9e5e37d-6ae7-4260-a0f6-3b22b8615a0c-capsule_aind_metadata_manager_capsule_3",
+			"source": "d9e5e37d-6ae7-4260-a0f6-3b22b8615a0c",
 			"target": "capsule_aind_metadata_manager_capsule_3"
 		},
 		{
@@ -47,14 +44,6 @@
 		}
 	],
 	"nodes": [
-		{
-			"id": "88500e4b-eb56-4211-b0c5-0c176cb3e8b8",
-			"position": {
-				"x": 1160.4444173177083,
-				"y": 243.1111043294271
-			},
-			"type": "dataset"
-		},
 		{
 			"data": {
 				"capsule_id": "6b0ab8c8-fefc-4009-8240-39bdedeabf15"
@@ -99,12 +88,15 @@
 			},
 			"selected": false,
 			"type": "capsule"
+		},
+		{
+			"id": "d9e5e37d-6ae7-4260-a0f6-3b22b8615a0c",
+			"position": {
+				"x": 1160.4444173177083,
+				"y": 243.1111043294271
+			},
+			"type": "dataset"
 		}
 	],
-	"timestamp": 1783646803686,
-	"viewport": {
-		"x": 0,
-		"y": 0,
-		"zoom": 0.75
-	}
+	"timestamp": 1785267827406
 }
