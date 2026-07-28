@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:c295e2f4d2250236dbf76e3b40b25ca986b18e9d879a0b5f75f5b7a225cd030f
+// hash:sha256:dfa546817fa53af5f330da415d797763a96becb80c98bbfbfd77eeab0ec846a8
 
 // capsule - dynamic-foraging-behavior-only-nwb-packaging
 process capsule_dynamic_foraging_behavior_only_nwb_packaging_2 {
@@ -62,7 +62,7 @@ process capsule_aind_metadata_manager_capsule_3 {
 	publishDir "$RESULTS_PATH", mode: 'copy', saveAs: { filename -> new File(filename).getName() }
 
 	input:
-	path 'capsule/data/'
+	path 'capsule/data/pipeline_processing.json/'
 	path 'capsule/data'
 
 	output:
