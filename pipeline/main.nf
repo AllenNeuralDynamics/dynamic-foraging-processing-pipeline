@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:30a2eda1fbe4429b56748c75b01e7696369f710762b1172894e98d5d4935dac5
+// hash:sha256:c295e2f4d2250236dbf76e3b40b25ca986b18e9d879a0b5f75f5b7a225cd030f
 
 // capsule - dynamic-foraging-behavior-only-nwb-packaging
 process capsule_dynamic_foraging_behavior_only_nwb_packaging_2 {
@@ -149,7 +149,7 @@ process capsule_dynamic_foraging_behavior_only_qc_1 {
 	"""
 }
 
-params.dynamic_foraging_raw_data_url = 's3://aind-open-data/behavior_845023_2026-07-07_19-24-15'
+params.dynamic_foraging_raw_data_url = 's3://aind-open-data/864253_2026-07-27_13-49-41'
 
 workflow {
 	// input data
