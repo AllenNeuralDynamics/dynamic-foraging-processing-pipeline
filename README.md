@@ -8,7 +8,7 @@ library.
 The pipeline can be viewed in 2 places in Code Ocean: 
 
 * The EDITABLE Github link: https://codeocean.allenneuraldynamics.org/capsule/8918069/tree. This is where changes are tracked and is where interaction with this repository occurs.
-* The RELEASED link in Code Ocean: https://codeocean.allenneuraldynamics.org/capsule/1998583/tree. This is IMMUTABLE, and is what is run automatically for processing data. This link tracks the versions released from the EDITABLE pipeline. The relationship is EDITABLE -> RELEASED
+* The RELEASED link in Code Ocean: https://codeocean.allenneuraldynamics.org/capsule/1998583/tree. This is IMMUTABLE, and is what is run automatically for processing data. This link tracks the versions released from the EDITABLE pipeline. It always resolves to the latest released version. The relationship is EDITABLE -> RELEASED. 
 
 The raw data coming may have multiple modalities such as ephys or fiber, but this pipeline ONLY processes the behavior data. The other modalities are processed elsewhere in other modality-specific pipelines.
 
