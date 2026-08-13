@@ -7,7 +7,7 @@
 				"id": "6b0ab8c8-fefc-4009-8240-39bdedeabf15",
 				"name": "dynamic-foraging-behavior-only-qc",
 				"slug": "4520453",
-				"version": 4
+				"version": 5
 			},
 			"resources": {
 				"cpus": 1,
@@ -43,7 +43,7 @@
 				"id": "0f46e0d0-ad1d-4f0b-b97f-18d56327b18e",
 				"name": "dynamic-foraging-behavior-only-nwb-packaging",
 				"slug": "1435739",
-				"version": 4
+				"version": 5
 			},
 			"resources": {
 				"cpus": 1,

@@ -1,5 +1,5 @@
 metadata_version: 1
-name: dynamic-foraging-behavior-processing-pipeline
+name: dynamic-foraging-processing-pipeline
 description: Processing pipeline to process dynamic foraging behavior only data on
   new acquisition standard
 authors:
