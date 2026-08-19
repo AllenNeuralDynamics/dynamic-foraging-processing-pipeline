@@ -1,10 +1,10 @@
 #!/usr/bin/env nextflow
-// hash:sha256:5392eeddbdeff38da11599105fed86333ccc7cf2435e36e2ae6078ae23d9cdeb
+// hash:sha256:3d30784d473162aaa0e8b85deacfce3314ef61934755d45ca7774bc010a72d3b
 
 // capsule - dynamic-foraging-behavior-only-nwb-packaging
 process capsule_dynamic_foraging_behavior_only_nwb_packaging_2 {
 	tag 'capsule-1435739'
-	container "$REGISTRY_HOST/published/0f46e0d0-ad1d-4f0b-b97f-18d56327b18e:v5"
+	container "$REGISTRY_HOST/published/0f46e0d0-ad1d-4f0b-b97f-18d56327b18e:v6"
 
 	cpus 1
 	memory '7.5 GB'
@@ -35,9 +35,9 @@ process capsule_dynamic_foraging_behavior_only_nwb_packaging_2 {
 
 	echo "[${task.tag}] cloning git repo..."
 	if [[ "\$(printf '%s\n' "2.20.0" "\$(git version | awk '{print \$3}')" | sort -V | head -n1)" = "2.20.0" ]]; then
-		git -c credential.helper= clone --filter=tree:0 --branch v5.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-1435739.git" capsule-repo
+		git -c credential.helper= clone --filter=tree:0 --branch v6.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-1435739.git" capsule-repo
 	else
-		git -c credential.helper= clone --branch v5.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-1435739.git" capsule-repo
+		git -c credential.helper= clone --branch v6.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-1435739.git" capsule-repo
 	fi
 	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
@@ -103,7 +103,7 @@ process capsule_aind_metadata_manager_capsule_3 {
 // capsule - dynamic-foraging-behavior-only-qc
 process capsule_dynamic_foraging_behavior_only_qc_1 {
 	tag 'capsule-4520453'
-	container "$REGISTRY_HOST/published/6b0ab8c8-fefc-4009-8240-39bdedeabf15:v5"
+	container "$REGISTRY_HOST/published/6b0ab8c8-fefc-4009-8240-39bdedeabf15:v6"
 
 	cpus 1
 	memory '7.5 GB'
@@ -133,9 +133,9 @@ process capsule_dynamic_foraging_behavior_only_qc_1 {
 
 	echo "[${task.tag}] cloning git repo..."
 	if [[ "\$(printf '%s\n' "2.20.0" "\$(git version | awk '{print \$3}')" | sort -V | head -n1)" = "2.20.0" ]]; then
-		git -c credential.helper= clone --filter=tree:0 --branch v5.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-4520453.git" capsule-repo
+		git -c credential.helper= clone --filter=tree:0 --branch v6.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-4520453.git" capsule-repo
 	else
-		git -c credential.helper= clone --branch v5.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-4520453.git" capsule-repo
+		git -c credential.helper= clone --branch v6.0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-4520453.git" capsule-repo
 	fi
 	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
