@@ -1,3 +1,12 @@
+# [0.20.0](https://github.com/AllenNeuralDynamics/dynamic-foraging-processing-pipeline/compare/v0.19.0...v0.20.0) (2026-11-02)
+
+
+### Features
+
+* use latest released capsule versions ([#53](https://github.com/AllenNeuralDynamics/dynamic-foraging-processing-pipeline/issues/53)) ([6ff2d9e](https://github.com/AllenNeuralDynamics/dynamic-foraging-processing-pipeline/commit/6ff2d9ede9e731ec62c83d40f9a99ac1e459a1dd))
+
+
+
 # [0.19.0](https://github.com/AllenNeuralDynamics/dynamic-foraging-processing-pipeline/compare/v0.18.1...v0.19.0) (2026-10-26)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * use latest released capsules ([#45](https://github.com/AllenNeuralDynamics/dynamic-foraging-processing-pipeline/issues/45)) ([132603f](https://github.com/AllenNeuralDynamics/dynamic-foraging-processing-pipeline/commit/132603f9b2e869e28ac2823d74768c9f55d929a3))
-
-
-
-# [0.16.0](https://github.com/AllenNeuralDynamics/dynamic-foraging-processing-pipeline/compare/v0.15.0...v0.16.0) (2026-10-02)
-
-
-### Features
-
-* use latest released capsules ([#43](https://github.com/AllenNeuralDynamics/dynamic-foraging-processing-pipeline/issues/43)) ([aded547](https://github.com/AllenNeuralDynamics/dynamic-foraging-processing-pipeline/commit/aded547dce5ae47b9b62ab0e7bcb2171fc7665a6))
 
 
 
